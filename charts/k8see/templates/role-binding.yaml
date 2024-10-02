@@ -1,0 +1,14 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: watch-events-cluster
+  labels:
+    {{- include "k8see-exporter.labels" . | nindent 4 }}
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: watch-events-cluster
+subjects:
+- kind: ServiceAccount
+  name: {{ include "k8see-exporter.serviceAccountName" . }}
+  namespace: {{ .Release.Namespace }}

@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  k8see-exporter:
+  - apiVersion: v2
+    appVersion: 0.3.0
+    created: "2024-10-02T10:20:03.51401079Z"
+    description: A Helm chart for Kubernetes
+    digest: 2f3203a51ec16627071bb20dd8404fa1d29084149cbbf5f6fc7463edf9331fae
+    icon: view-source:https://raw.githubusercontent.com/sgaunet/helmchart-helper/main/ico/helm.ico
+    name: k8see-exporter
+    type: application
+    urls:
+    - https://github.com/sgaunet/helm-k8see/releases/download/k8see-exporter-0.3.0/k8see-exporter-0.3.0.tgz
+    version: 0.3.0
+generated: "2024-10-02T10:20:03.514015639Z"
